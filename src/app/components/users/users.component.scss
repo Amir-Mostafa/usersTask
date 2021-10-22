@@ -1,0 +1,103 @@
+$shadoColor:#09c;
+$borderRauis:30%;
+.item-person
+{
+    
+    .vote
+    {
+        width: 60px;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        height: 60px;
+        background-color: #09c;
+        color: #fff;
+        position: absolute;
+        top: 0px;
+        right: 10%;
+    }
+    position: relative;
+    border-bottom-right-radius:50%;
+    border-top-left-radius:50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover
+    {
+        border-bottom-right-radius:0px;
+        border-top-left-radius:0px;
+        box-shadow: 0 0 22px #f00;
+    }
+    &:hover .img img
+    {
+        transform: scale(1.2);
+
+    }
+
+    
+    .img{
+        overflow: hidden;
+
+        img{
+            transition: all 1s;
+        }
+        
+    }
+    box-shadow: 0 0 20px $shadoColor;
+    
+    .img{
+        border-radius: 50%;
+    }
+    
+}
+.item
+{
+    
+    .vote
+    {
+        width: 60px;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        height: 60px;
+        background-color: #09c;
+        color: #fff;
+        position: absolute;
+        top: 0px;
+        right: 10%;
+    }
+    position: relative;
+    border-bottom-right-radius:$borderRauis;
+    
+    transition: all 0.5s;
+    &:hover
+    {
+        border-bottom-right-radius:0px;
+        
+        box-shadow: 0 0 22px #f00;
+    }
+    &:hover .img img
+    {
+        transform: scale(1.2);
+
+    }
+
+    
+    .img{
+        overflow: hidden;
+
+        img{
+            transition: all 1s;
+        }
+        
+    }
+    box-shadow: 0 0 20px $shadoColor;
+    border: 1px solid #fff;
+    
+}
+#particles-js {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    z-index: -100;
+  }
